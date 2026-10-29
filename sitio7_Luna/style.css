@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+body {
+    background-color: rgba(223, 195, 159, 0.733);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+section {
+    display: block;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    vertical-align: super;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(235, 178, 138, 0.75);
+    height: 5vh;
+    transition: all ease 0.3s;
+}
+nav:hover {
+    background-color: rgb(233, 184, 149);
+}
+nav > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3vw;
+    transition: all ease 0.2s;
+}
+nav > a:visited {
+    color: black;
+    text-decoration: none;
+}
+nav > a:hover {
+    font-size: 1.5vw;
+}
+#abt_me {
+    margin-top: 5vh;
+    height: 65vh;
+    background-color: rgba(224, 141, 81, 0.75);
+    border: rgba(224, 135, 71, 0.3) 2px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.profile {
+    background-color: gainsboro;
+    color: rgba(131, 131, 131, 0.75);
+    width: 30vw;
+    height: 30vw;
+    vertical-align: middle;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vw;
+}
+.profile > p {
+    font-size: 10vw;
+}
+.info {
+    margin: 1.5vw;
+}
+.info > h1 {
+    font-size: 5vw;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 300;
+}
+.info > h3 {
+    font-size: 2.5vw;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+}
+.info > p {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+#formation {
+    height: 65vh;
+    background-color: rgba(189, 121, 72, 0.75);
+    border: rgba(194, 125, 76, 0.3) 2px solid;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    background-color: rgba(235, 178, 138, 0.75);
+}
+footer > p {
+    font-size: 3vh;
+}
