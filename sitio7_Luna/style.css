@@ -1,3 +1,6 @@
+/* ------------------------
+GENERALES
+-----------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +19,11 @@ body {
 section {
     display: block;
 }
+
+/* ------------------------
+NavBar
+-----------------------------*/
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +56,11 @@ nav > a:visited {
 nav > a:hover {
     font-size: 1.5vw;
 }
+
+/* ------------------------
+Abtme Section
+-----------------------------*/
+
 #abt_me {
     margin-top: 5vh;
     height: 65vh;
@@ -93,11 +106,82 @@ nav > a:hover {
     font-weight: 300;
     font-size: 1.5vw;
 }
+.abt_me_desc {
+    background-color: rgba(224, 141, 81, 0.75);
+    border: rgba(224, 135, 71, 0.3) 2px solid;
+    display: flex;
+    flex-direction: column;
+}
+.desc_head > h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.desc_head > p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.desc_info {
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+}
+.desc_info > div {
+    margin: 0 35px;
+    background-color: rgba(224, 130, 63, 0.75);
+    border: rgba(224, 127, 57, 0.75) 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.desc_info > div > h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(37, 27, 19, 0.75);
+}
+.desc_info > div > p {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* ------------------------
+Formation Section
+-----------------------------*/
+
 #formation {
-    height: 65vh;
     background-color: rgba(189, 121, 72, 0.75);
     border: rgba(194, 125, 76, 0.3) 2px solid;
 }
+#formation > h2 {
+    margin: 30px 0 0 3rem;
+    text-decoration: underline;
+    font-size: 1.87rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.formation_item {
+    margin: 40px 5vw;
+    background-color: azure;
+    border: rgb(182, 204, 204) 2px groove;
+    padding: 15px;
+}
+.formation_item > h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.formation_item > p {
+    margin: 10px 0;
+    color: rgb(75, 75, 75);
+    font-size: 0.9rem;
+}
+
+/* ------------------------
+Footer
+-----------------------------*/
 
 footer {
     display: flex;
@@ -115,3 +199,4 @@ footer {
 footer > p {
     font-size: 3vh;
 }
+
