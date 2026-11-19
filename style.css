@@ -1,0 +1,311 @@
+/* ------------------------
+GENERALES
+-----------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+body {
+    background-color: rgba(223, 195, 159, 0.733);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+section {
+    display: block;
+}
+
+/* ------------------------
+NavBar
+-----------------------------*/
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    vertical-align: super;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(235, 178, 138, 0.75);
+    height: 5vh;
+    transition: all ease 0.3s;
+}
+nav:hover {
+    background-color: rgb(233, 184, 149);
+}
+nav > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3vw;
+    transition: all ease 0.2s;
+}
+nav > a:visited {
+    color: black;
+    text-decoration: none;
+}
+nav > a:hover {
+    font-size: 1.5vw;
+}
+
+/* ------------------------
+Abtme Section
+-----------------------------*/
+
+#abt_me {
+    margin-top: 5vh;
+    height: 65vh;
+    background-color: rgba(224, 141, 81, 0.75);
+    border: rgba(224, 135, 71, 0.3) 2px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.profile {
+    background-color: gainsboro;
+    color: rgba(131, 131, 131, 0.75);
+    width: 30vw;
+    height: 30vw;
+    vertical-align: middle;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vw;
+}
+.profile > p {
+    font-size: 10vw;
+}
+.info {
+    margin: 1.5vw;
+}
+.info > h1 {
+    font-size: 5vw;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 300;
+}
+.info > h3 {
+    font-size: 2.5vw;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+}
+.info > p {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+.abt_me_desc {
+    background-color: rgba(224, 141, 81, 0.75);
+    border: rgba(224, 135, 71, 0.3) 2px solid;
+    display: flex;
+    flex-direction: column;
+}
+.desc_head > h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.desc_head > p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.desc_info {
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+}
+.desc_info > div {
+    margin: 0 35px;
+    background-color: rgba(224, 130, 63, 0.75);
+    border: rgba(224, 127, 57, 0.75) 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.desc_info > div > h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(37, 27, 19, 0.75);
+}
+.desc_info > div > p {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* ------------------------
+Formation Section
+-----------------------------*/
+
+#formation {
+    background-color: rgba(189, 121, 72, 0.75);
+    border: rgba(194, 125, 76, 0.3) 2px solid;
+}
+#formation > h2 {
+    margin: 30px 0 0 3rem;
+    text-decoration: underline;
+    font-size: 1.87rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.formation_item {
+    margin: 40px 5vw;
+    background-color: azure;
+    border: rgb(182, 204, 204) 2px groove;
+    padding: 15px;
+}
+.formation_item > h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.formation_item > p {
+    margin: 10px 0;
+    color: rgb(75, 75, 75);
+    font-size: 0.9rem;
+}
+
+/*---------------------------
+Experience Section
+-----------------------------*/
+
+#experience {
+    background-color: rgba(234, 149, 88, 0.75);
+    border: rgba(194, 125, 76, 0.3) 2px solid;
+}
+#experience > h2 {
+    margin: 30px 0 0 3rem;
+    text-decoration: underline;
+    font-size: 1.87rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.experience_item {
+    margin: 40px 5vw;
+    background-color: azure;
+    border: rgb(182, 204, 204) 2px groove;
+    padding: 15px;
+}
+.experience_item > h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.experience_item > p {
+    margin: 10px 0;
+    color: rgb(75, 75, 75);
+    font-size: 0.9rem;
+}
+
+/* ------------------------
+Abilities Section
+-----------------------------*/
+#abilities {
+    height: 65vh;
+    background-color: rgba(144, 85, 43, 0.75);
+    border: rgba(224, 135, 71, 0.3) 2px solid;
+}
+
+#abilities > h2 {
+    margin: 30px 0 0 3rem;
+    text-decoration: underline;
+    font-size: 1.87rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.abilities_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px auto;
+}
+.abilities_info > div {
+    margin: 20px 35px;
+    background-color: rgba(224, 130, 63, 0.75);
+    border: rgba(224, 127, 57, 0.75) 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.abilities_info > div > h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(37, 27, 19, 0.75);
+}
+.abilities_info > div > p {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* ------------------------
+Contact Section
+-----------------------------*/
+
+#contact {
+    background-color: rgba(191, 151, 123, 0.75);
+    border: rgba(194, 125, 76, 0.3) 2px solid;
+}
+#contact > h2 {
+    margin: 30px 0 0 3rem;
+    text-decoration: underline;
+    font-size: 1.87rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.contact_item {
+    margin: 40px 5vw;
+    background-color: azure;
+    border: rgb(182, 204, 204) 2px groove;
+    padding: 15px;
+}
+.contact_item > h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.contact_item > p {
+    margin: 10px 0;
+    color: rgb(75, 75, 75);
+    font-size: 0.9rem;
+}
+
+/* ------------------------
+Footer
+-----------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    background-color: rgba(235, 178, 138, 0.75);
+}
+footer > p {
+    font-size: 3vh;
+}
