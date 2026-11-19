@@ -179,6 +179,116 @@ Formation Section
     font-size: 0.9rem;
 }
 
+/*---------------------------
+Experience Section
+-----------------------------*/
+
+#experience {
+    background-color: rgba(234, 149, 88, 0.75);
+    border: rgba(194, 125, 76, 0.3) 2px solid;
+}
+#experience > h2 {
+    margin: 30px 0 0 3rem;
+    text-decoration: underline;
+    font-size: 1.87rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.experience_item {
+    margin: 40px 5vw;
+    background-color: azure;
+    border: rgb(182, 204, 204) 2px groove;
+    padding: 15px;
+}
+.experience_item > h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.experience_item > p {
+    margin: 10px 0;
+    color: rgb(75, 75, 75);
+    font-size: 0.9rem;
+}
+
+/* ------------------------
+Abilities Section
+-----------------------------*/
+#abilities {
+    height: 65vh;
+    background-color: rgba(144, 85, 43, 0.75);
+    border: rgba(224, 135, 71, 0.3) 2px solid;
+}
+
+#abilities > h2 {
+    margin: 30px 0 0 3rem;
+    text-decoration: underline;
+    font-size: 1.87rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.abilities_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px auto;
+}
+.abilities_info > div {
+    margin: 20px 35px;
+    background-color: rgba(224, 130, 63, 0.75);
+    border: rgba(224, 127, 57, 0.75) 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.abilities_info > div > h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(37, 27, 19, 0.75);
+}
+.abilities_info > div > p {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* ------------------------
+Contact Section
+-----------------------------*/
+
+#contact {
+    background-color: rgba(191, 151, 123, 0.75);
+    border: rgba(194, 125, 76, 0.3) 2px solid;
+}
+#contact > h2 {
+    margin: 30px 0 0 3rem;
+    text-decoration: underline;
+    font-size: 1.87rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.contact_item {
+    margin: 40px 5vw;
+    background-color: azure;
+    border: rgb(182, 204, 204) 2px groove;
+    padding: 15px;
+}
+.contact_item > h3 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.contact_item > p {
+    margin: 10px 0;
+    color: rgb(75, 75, 75);
+    font-size: 0.9rem;
+}
+
 /* ------------------------
 Footer
 -----------------------------*/
@@ -199,4 +309,3 @@ footer {
 footer > p {
     font-size: 3vh;
 }
-
